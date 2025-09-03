@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", serif;
+    background-color: #F4F4F6;
+}
+
+.repos-countainer {
+    box-shadow: -1px 3px 9px 1px rgba(135, 125, 125, 1);
+    -webkit-box-shadow: -1px 3px 9px 1px rgba(135, 125, 125, 1);
+    -moz-box-shadow: -1px 3px 9px 1px rgba(135, 125, 125, 1);
+    padding: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    border-radius: 7px;
+}
+
+.repos-countainer h1 {
+    color: #5CC183;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 17px;
+}
+
+@media (min-width:426px) {
+    .repos-countainer {
+        width: 60%;
+    }
+
+    .repos-countainer h1 {
+        font-size: 30px;
+    }
+}
+
+@media (min-width:1025px) {
+    .repos-countainer {
+        width: 40%;
+    }
+
+    .repos-countainer h1 {
+        font-size: 39px;
+    }
+}
+
+
+
+.repos-countainer .input-repo {
+    margin: 15px 0;
+}
+
+@media (min-width:768px) {
+    .repos-countainer .input-repo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        height: 35px;
+    }
+}
+
+.repos-countainer .input-repo input {
+    height: 100%;
+    background-color: transparent;
+    border: 1px solid #d4d4d4;
+    border-radius: 3px;
+    padding: 13px;
+    caret-color: #5cc183;
+    transition: 0.3s;
+    color: #888;
+    font-size: 15px;
+    width: 100%;
+}
+
+.repos-countainer .input-repo input:focus {
+    border: 1px solid #5cc183;
+    outline: none;
+    border-radius: 20px;
+}
+
+.repos-countainer .input-repo button {
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid #5cc183;
+    padding: 7px 10px;
+    border-radius: 3px;
+    transition: 0.3s;
+    color: #888;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 18px;
+    width: 100%;
+}
+
+
+@media (min-width:768px) {
+    .repos-countainer .input-repo button {
+        margin-top: unset;
+        width: 125px;
+    }
+}
+
+
+
+.repos-countainer .input-repo button:hover {
+    border-radius: 30px;
+    background-color: #5CC183;
+    color: white;
+}
+
+.repos-countainer .show-data {
+    max-height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.repos-countainer .show-data>span {
+    color: red;
+    font-size: 15px;
+}
+
+.repos-countainer .show-data .data {
+    padding: 12px 0;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.repos-countainer .show-data .data:not(:last-of-type) {
+    border-bottom: 1px solid #d8d8d8;
+}
+
+@media (min-width:769px) {
+    .repos-countainer .show-data .data {
+        flex-direction: unset;
+        gap: unset;
+    }
+}
+
+
+.repos-countainer .show-data .data>div:first-of-type {
+    flex: 1;
+    padding: 10px 0;
+    color: #888;
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width:426px) {
+    .repos-countainer .show-data .data>div:first-of-type {
+        font-size: 18px;
+    }
+}
+
+.repos-countainer .show-data .data>div:first-of-type i {
+    color: #5cc183;
+    font-size: 35px;
+    margin-right: 15px;
+}
+
+.repos-countainer .show-data .data>div:last-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.repos-countainer .show-data .data>div:last-of-type>span:first-of-type {
+    background-color: #E0C762;
+    color: white;
+}
+
+.repos-countainer .show-data .data>div:last-of-type>span {
+    padding: 7px 15px;
+    background-color: #716D5B;
+    color: wheat;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.repos-countainer .show-data .data>div:last-of-type>a {
+    padding: 7px 15px;
+    border-radius: 4px;
+    background-color: #064247;
+    color: #e5d8d8;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+}
+
+.repos-countainer .show-data .data>div:last-of-type>a i {
+    text-decoration: none;
+}
